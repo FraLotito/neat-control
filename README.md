@@ -17,7 +17,7 @@ A pole is attached by an un-actuated joint to a cart, which moves along a fricti
 
 Type: Box(4)
 
-| Num | Observation | Min | Max |
+| ID | Observation | Min | Max |
 | ---- | ----------- | ---- | ----| 
 | 0 | Cart Position | -2.4 | 2.4 |
 | 1 | Cart Velocity | -Inf | Inf |
@@ -28,7 +28,7 @@ Type: Box(4)
 
 Type: Discrete(2)
 
-| Num |	Action |
+| ID |	Action |
 | ---- | ----- |
 | 0 	| Push cart to the left |
 | 1 	| Push cart to the right |
