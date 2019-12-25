@@ -4,9 +4,8 @@ This is a brief tutorial to solve some classical control theory problems from th
 ## Background
 ### NEAT
 NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algorithm, one of the few such algorithms that evolves the architectures of its networks in addition to the weights. For more information, see this research paper: http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf.
+A python implementation of NEAT is available with the package python-neat.
 ### OpenAI Gym
-
-## Requirements
 
 ## Environments
 ### CartPole-v1
@@ -45,7 +44,7 @@ All observations are assigned a uniform random value between ±0.05.
 * Episode length is greater than 500.
 
 #### Solved Requirements
-Considered solved when the average reward is greater than or equal to 475.0 over 100 consecutive trials.
+The task is considered solved when the average reward is greater than or equal to 475.0 over 100 consecutive trials.
 
 #### CartPole-v0
 There exists also another version of CartPole namely CartPole-v0, which differs from CartPole-v0 in the solved requirements: 195.0 over 100 consecutive trials instead of 475.0.
