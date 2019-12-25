@@ -4,11 +4,9 @@ This is a brief tutorial to solve some classical control theory problems from th
 ## Background
 
 ### NEAT
-NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algorithm, one of the few such algorithms that evolves the architectures of its networks in addition to the weights. 
+NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algorithm. Usually, we you are dealing with neural networks, you need to decide apriori the topology of the network (this is tipically done relying on experience and heuristics) and then you train the weights of the networks through gradient descent and backpropagation; the idea behind the NEAT algorithm is to use an evolutionary approach to make the topology and the weights of the neural network evolve to solve a certain task. 
 
-TODO: more on NEAT
-
-For more information, see this research paper: http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
+You can find more information on the algorithms in this paper http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
 
 A python implementation of NEAT is available with the package python-neat.
 
