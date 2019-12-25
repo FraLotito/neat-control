@@ -15,7 +15,7 @@ It makes no assumptions about the structure of your agent, and is compatible wit
 ## Environments
 ### CartPole-v1
 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum starts upright, and the goal is to prevent it from falling over by increasing and reducing the cart's velocity.
-![alt text](images/cartpole.jpg "CartPole")
+<img src="images/cartpole.jpg" width="500" height="270" />
 
 #### Observations
 
