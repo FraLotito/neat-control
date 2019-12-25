@@ -11,7 +11,7 @@ NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algo
 ## Environments
 ### CartPole-v1
 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum starts upright, and the goal is to prevent it from falling over by increasing and reducing the cart's velocity.
-![alt text](cartpole.jpg "CartPole")
+![alt text](images/cartpole.jpg "CartPole")
 
 #### Observations
 
@@ -51,4 +51,4 @@ Considered solved when the average reward is greater than or equal to 475.0 over
 There exists also another version of CartPole namely CartPole-v0, which differs from CartPole-v0 in the solved requirements: 195.0 over 100 consecutive trials instead of 475.0.
 
 #### Solution
-![alt text](cartpole.gif "CartPole")
+![alt text](images/cartpole.gif "CartPole")
