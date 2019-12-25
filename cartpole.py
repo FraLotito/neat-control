@@ -18,9 +18,17 @@ def eval_genome(genome, config):
         observation = env.reset()
         fitness = 0
         for _ in range(500):
+            # The observation is used as the input of the NN
             action = net.activate(observation)
+
+            # As the action we take the one with the highest probability
             action = int(np.argmax(action))
+
+            # We take the action
             observation, reward, done, _ = env.step(action)
+
+            # And get a reward
+
             fitness += reward
             if done:
                 fitnesses.append(fitness)
@@ -31,6 +39,7 @@ def eval_genome(genome, config):
     return min(fitnesses)
 
 
+# Evaluation over 100 episodes
 def eval_winner_net(winner, config):
     winner_net = neat.nn.FeedForwardNetwork.create(winner, config)
     fitnesses = []
@@ -52,7 +61,7 @@ def eval_winner_net(winner, config):
     else:
         print(" - The task is not solved - ")
 
-
+# Final animation
 def viz_winner_net(winner, config):
     winner_net = neat.nn.FeedForwardNetwork.create(winner, config)
     for _ in range(3):
