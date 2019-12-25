@@ -12,7 +12,7 @@ def eval_genome(genome, config):
     net = neat.nn.FeedForwardNetwork.create(genome, config)
 
     fitnesses = []
-    runs_per_net = 5
+    runs_per_net = 10
 
     for _ in range(runs_per_net):
         observation = env.reset()
