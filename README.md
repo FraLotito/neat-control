@@ -4,13 +4,16 @@ This is a brief tutorial to solve some classical control theory problems from th
 ## Background
 
 ### NEAT
-NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algorithm, one of the few such algorithms that evolves the architectures of its networks in addition to the weights. For more information, see this research paper: http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf.
+NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algorithm, one of the few such algorithms that evolves the architectures of its networks in addition to the weights. 
+
+For more information, see this research paper: http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
+
 A python implementation of NEAT is available with the package python-neat.
 
 ### OpenAI Gym
 The Gym library is a collection of test problems — environments — that you can use to work out your reinforcement learning algorithms, these environments have a shared interface, allowing you to write general algorithms. It supports teaching agents everything from walking to playing games like Pong or Pinball.
 
-It makes no assumptions about the structure of your agent, and is compatible with any numerical computation library.
+It makes no assumptions about the structure of your agent, and it's compatible with any numerical computation library.
 
 ## Environments
 ### CartPole-v1
@@ -54,7 +57,7 @@ The task is considered solved when the average reward is greater than or equal t
 #### CartPole-v0
 There exists also another version of CartPole namely CartPole-v0, which differs from CartPole-v0 in the solved requirements: 195.0 over 100 consecutive trials instead of 475.0.
 
-#### Solution
+#### Example of the solution
 This is an animation of the cart-pole controlled by the evolved neural network which solved the environment.
 <img src="images/cartpole.gif" width="500" height="270" />
 
