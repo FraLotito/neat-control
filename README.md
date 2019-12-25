@@ -6,6 +6,8 @@ This is a brief tutorial to solve some classical control theory problems from th
 ### NEAT
 NEAT (Neuro-Evolution of Augmenting Topologies) is a popular neuroevolution algorithm, one of the few such algorithms that evolves the architectures of its networks in addition to the weights. 
 
+TODO: more on NEAT
+
 For more information, see this research paper: http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
 
 A python implementation of NEAT is available with the package python-neat.
@@ -64,3 +66,5 @@ This is an animation of the cart-pole controlled by the evolved neural network w
 And it's clearly better than the random agent.
 
 <img src="images/cartpole_random.gif" width="500" height="270" />
+
+### TODO: add more environments
