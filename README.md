@@ -56,8 +56,8 @@ There exists also another version of CartPole namely CartPole-v0, which differs 
 
 #### Solution
 This is an animation of the cart-pole controlled by the evolved neural network which solved the environment.
-![alt text](images/cartpole.gif "CartPole")
+<img src="images/cartpole.gif" width="700" height="300" />
 
 And it's clearly better than the random agent.
 
-![alt text](images/cartpole_random.gif "CartPole Random")
+<img src="images/cartpole_random.gif" width="700" height="300" />
