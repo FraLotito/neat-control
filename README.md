@@ -1,5 +1,5 @@
-# Self-solving control theory problems with NEAT
-This is a brief tutorial to solve some classical control theory problems from the OpenAI Gym environment using the NEAT algorithm.
+# Self-solving control problems with NEAT
+This is a brief tutorial to solve some classical control problems from the OpenAI Gym environment using the NEAT algorithm.
 
 ## Background
 
