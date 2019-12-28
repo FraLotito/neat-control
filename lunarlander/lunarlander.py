@@ -27,7 +27,7 @@ def eval_genome(genome, config):
                 break
         fitnesses.append(fitness)
 
-    # The genome's fitness is its worst performance across all runs.
+    # The genome's fitness is the mean performance across all runs.
     return np.mean(fitnesses)
 
 
@@ -51,6 +51,8 @@ def eval_winner_net(winner, config):
         print(" + The task is solved + ")
     else:
         print(" - The task is not solved - ")
+
+    # Saves winnder net
     pickle_out = open("fitness{}.pickle".format(np.mean(fitnesses)),"wb")
     pickle.dump(winner, pickle_out)
     pickle_out.close()
@@ -68,7 +70,7 @@ def viz_winner_net(winner, config):
             if done:
                 break
 
-# Loads the CartPole environment
+# Loads the LunarLander environment
 env = gym.make('LunarLander-v2')
 
 # Loads NEAT configuration file
@@ -95,8 +97,6 @@ eval_winner_net(winner, config)
 
 # Visualization 
 viz_winner_net(winner, config)
-
-#draw_net(config, winner)
 
 # Close the environment
 env.close()
