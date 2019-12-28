@@ -47,7 +47,7 @@ def eval_winner_net(winner, config):
                 break
         fitnesses.append(fitness)
     print("Average fitness across 100 episodes is: {}".format(np.mean(fitnesses)))
-    if np.mean(fitnesses) > 475:
+    if np.mean(fitnesses) >= 200:
         print(" + The task is solved + ")
     else:
         print(" - The task is not solved - ")

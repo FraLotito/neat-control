@@ -1,48 +1,33 @@
 # LunarLander-v2
-A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum starts upright, and the goal is to prevent it from falling over by increasing and reducing the cart's velocity.
+Rocket trajectory optimization is a classic topic in Optimal Control. 
 <img src="../images/lunar.jpg" width="500" height="270" />
 
 ## Observations
 
-Type: Box(4)
-
-| ID | Observation | Min | Max |
-| ---- | ----------- | ---- | ----| 
-| 0 | Cart Position | -2.4 | 2.4 |
-| 1 | Cart Velocity | -Inf | Inf |
-| 2 | Pole Angle | ~ -41.8° | ~ 41.8°| 
-| 3 | Pole Velocity At Tip | -Inf | Inf|
+Type: Box(8)
 
 ## Actions
 
-Type: Discrete(2)
+Type: Discrete(4)
 
 | ID |	Action |
 | ---- | ----- |
-| 0 	| Push cart to the left |
-| 1 	| Push cart to the right |
+| 0 	| Do nothing |
+| 1 	| Fire left engine |
+| 0 	| Fire main engine |
+| 1 	| Fire right engine |
 
-## Reward
-The reward is 1 for every step taken, including the termination step.
+## Reward and episode Termination
+Reward for moving from the top of the screen to landing pad and zero speed is about 100 to 140 points. If lander moves away from landing pad it loses reward back. Episode finishes if the lander crashes or comes to rest, receiving additional -100 or +100 points. Each leg ground contact is +10. Firing main engine is -0.3 points each frame. Solved is 200 points. Landing outside landing pad is possible. Fuel is infinite, so an agent can learn to fly and then land on its first attempt. 
 
 ## Starting State
-All observations are assigned a uniform random value between ±0.05.
-
-## Episode Termination
-* Pole Angle is more than ±12°
-* Cart Position is more than ±2.4 (center of the cart reaches the edge of the display)
-* Episode length is greater than 500.
+Landing pad is always starting at coordinates (0,0).
 
 ## Solved Requirements
-The task is considered solved when the average reward is greater than or equal to 475.0 over 100 consecutive trials.
-
-## CartPole-v0
-There exists also another version of CartPole namely CartPole-v0, which differs from CartPole-v0 in the solved requirements: 195.0 over 100 consecutive trials instead of 475.0.
+The task is considered solved when the average reward is greater than or equal to 200.0 over 100 consecutive trials.
 
 ## Example of the solution
-This is an animation of the cart-pole controlled by the evolved neural network which solved the environment.
+The tasks takes about 80 generations to be solved.
+
+This is an animation of the lander controlled by the evolved neural network which solved the environment.
 <img src="../images/cartpole.gif" width="500" height="270" />
-
-And it's clearly better than the random agent.
-
-<img src="../images/cartpole_random.gif" width="500" height="270" />

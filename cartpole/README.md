@@ -40,6 +40,8 @@ The task is considered solved when the average reward is greater than or equal t
 There exists also another version of CartPole namely CartPole-v0, which differs from CartPole-v0 in the solved requirements: 195.0 over 100 consecutive trials instead of 475.0.
 
 ## Example of the solution
+The task takes about 2 generations to be solved.
+
 This is an animation of the cart-pole controlled by the evolved neural network which solved the environment.
 <img src="../images/cartpole.gif" width="500" height="270" />
 
