@@ -1,5 +1,5 @@
 # LunarLander-v2
-Rocket trajectory optimization is a classic topic in Optimal Control. 
+Rocket trajectory optimization is a classic topic in Optimal Control. The goal of the agent is to land the space-ship inside the landing pad (the space between the two yellow flags). The space-ship is controlled by one main engine (bottom) e two side engines (left and right).
 <img src="../images/lunar.jpg" width="500" height="270" />
 
 ## Observations
