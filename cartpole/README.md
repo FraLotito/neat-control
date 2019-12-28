@@ -1,5 +1,6 @@
 # CartPole-v1
 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum starts upright, and the goal is to prevent it from falling over by increasing and reducing the cart's velocity.
+
 <img src="../images/cartpole.jpg" width="500" height="270" />
 
 ## Observations
@@ -42,9 +43,14 @@ There exists also another version of CartPole namely CartPole-v0, which differs 
 ## Example of the solution
 The task takes about 2 generations to be solved.
 
-This is an animation of the cart-pole controlled by the evolved neural network which solved the environment.
+This is the evolved neural network which solved the environment
+
+<img src="../images/cartpole_net.svg" width="500" height="270" />
+
+and this is an animation of the cart-pole controlled by it.
+
 <img src="../images/cartpole.gif" width="500" height="270" />
 
-And it's clearly better than the random agent.
+It's clearly better than the random agent.
 
 <img src="../images/cartpole_random.gif" width="500" height="270" />
