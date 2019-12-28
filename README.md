@@ -16,3 +16,7 @@ The Gym library is a collection of test problems — environments — that you c
 It makes no assumptions about the structure of your agent, and it's compatible with any numerical computation library.
 
 ## Environments
+So far this repository contains the write-ups of the following environments:
+
+* [CartPole-v1](https://github.com/FraLotito/neat-control/tree/master/cartpole)
+* [LunarLander-v2](https://github.com/FraLotito/neat-control/tree/master/lunarlander)
