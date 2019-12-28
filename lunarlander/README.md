@@ -30,5 +30,10 @@ The task is considered solved when the average reward is greater than or equal t
 ## Example of the solution
 The tasks takes about 80 generations to be solved.
 
-This is an animation of the lander controlled by the evolved neural network which solved the environment.
+This is the evolved neural network which solved the environment
+
+<img src="../images/lunar_net.svg" width="500" height="270" />
+
+and this is an animation of the lander controlled by it.
+
 <img src="../images/lunar.gif" width="500" height="270" />
