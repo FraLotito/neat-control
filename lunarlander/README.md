@@ -18,13 +18,13 @@ Type: Discrete(4)
 | 2 	| Fire main engine |
 | 3 	| Fire right engine |
 
-## Reward and episode Termination
+## Reward and episode termination
 Reward for moving from the top of the screen to landing pad and zero speed is about 100 to 140 points. If lander moves away from landing pad it loses reward back. Episode finishes if the lander crashes or comes to rest, receiving additional -100 or +100 points. Each leg ground contact is +10. Firing main engine is -0.3 points each frame. Solved is 200 points. Landing outside landing pad is possible. Fuel is infinite, so an agent can learn to fly and then land on its first attempt. 
 
-## Starting State
+## Starting state
 Landing pad is always starting at coordinates (0,0).
 
-## Solved Requirements
+## Solved requirements
 The task is considered solved when the average reward is greater than or equal to 200.0 over 100 consecutive trials.
 
 ## Example of the solution

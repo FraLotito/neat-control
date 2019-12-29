@@ -26,15 +26,15 @@ Type: Discrete(2)
 ## Reward
 The reward is 1 for every step taken, including the termination step.
 
-## Starting State
+## Starting state
 All observations are assigned a uniform random value between ±0.05.
 
-## Episode Termination
+## Episode termination
 * Pole Angle is more than ±12°
 * Cart Position is more than ±2.4 (center of the cart reaches the edge of the display)
 * Episode length is greater than 500.
 
-## Solved Requirements
+## Solved requirements
 The task is considered solved when the average reward is greater than or equal to 475.0 over 100 consecutive trials.
 
 ## CartPole-v0
