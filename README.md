@@ -1,5 +1,5 @@
 # Self-solving control problems with NEAT
-This is a brief tutorial to solve some classical control problems from the OpenAI Gym toolkit using the NEAT algorithm.
+This is a brief tutorial to solve some classical control problems from OpenAI Gym using NEAT.
 
 ## Background
 
